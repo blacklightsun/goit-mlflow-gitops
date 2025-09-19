@@ -1487,3 +1487,36 @@ externalAzureBlob:
   existingConnectionStringKey: ""
   clientSecretKey: ""
   serveArtifacts: true
+
+
+
+# Конфігурація постійного зберігання для MLflow server
+persistence:
+  enabled: true
+  storageClass: "mlflow-storage "  # ваш StorageClass
+  size: 4Gi
+  accessModes:
+    - ReadWriteOnce
+
+# Конфігурація PostgreSQL для метаданих
+postgresql:
+  enabled: true
+  auth:
+    postgresPassword: "mlflow123"
+    database: "mlflow"
+  primary:
+    persistence:
+      enabled: true
+      storageClass: "mlflow-storage "
+      size: 4Gi
+
+# Конфігурація MinIO для артефактів (опціонально)
+minio:
+  enabled: true
+  auth:
+    rootUser: admin
+    rootPassword: password123
+  persistence:
+    enabled: true
+    storageClass: "mlflow-storage " 
+    size: 4Gi
