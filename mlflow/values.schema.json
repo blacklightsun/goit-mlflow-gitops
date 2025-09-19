@@ -382,7 +382,7 @@
                         "readOnlyRootFilesystem": {
                             "type": "boolean",
                             "description": "Set containers' Security Context runAsNonRoot",
-                            "default": true
+                            "default": false
                         },
                         "allowPrivilegeEscalation": {
                             "type": "boolean",
@@ -1381,7 +1381,7 @@
                         "readOnlyRootFilesystem": {
                             "type": "boolean",
                             "description": "Set Run containers' Security Context runAsNonRoot",
-                            "default": true
+                            "default": false
                         },
                         "allowPrivilegeEscalation": {
                             "type": "boolean",
@@ -1856,7 +1856,7 @@
                         "readOnlyRootFilesystem": {
                             "type": "boolean",
                             "description": "Set containers' Security Context runAsNonRoot",
-                            "default": true
+                            "default": false
                         },
                         "allowPrivilegeEscalation": {
                             "type": "boolean",
