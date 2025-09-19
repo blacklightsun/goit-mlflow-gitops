@@ -282,7 +282,7 @@ containerSecurityContext:
   runAsGroup: 1001
   runAsNonRoot: true
   privileged: false
-  readOnlyRootFilesystem: true
+  readOnlyRootFilesystem: false
   allowPrivilegeEscalation: false
   capabilities:
     drop: ["ALL"]
@@ -1076,7 +1076,7 @@ console:
     runAsUser: 1001
     runAsGroup: 1001
     runAsNonRoot: true
-    readOnlyRootFilesystem: true
+    readOnlyRootFilesystem: false
     privileged: false
     allowPrivilegeEscalation: false
     capabilities:
@@ -1689,7 +1689,7 @@ provisioning:
     runAsGroup: 1001
     runAsNonRoot: true
     privileged: false
-    readOnlyRootFilesystem: true
+    readOnlyRootFilesystem: false
     allowPrivilegeEscalation: false
     capabilities:
       drop: ["ALL"]
