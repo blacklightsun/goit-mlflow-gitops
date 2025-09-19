@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/blacklightsun/goit-mlflow-gitops.git
     targetRevision: main
-    path: charts/mlflow
+    path: mlflow
     helm:
       releaseName: mlflow
       # Only include if you have a custom values file
