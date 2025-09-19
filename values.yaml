@@ -1,9 +1,0 @@
-replicaCount: 1
-
-image:
-  repository: mlflow
-  tag: 2.5.0
-
-service:
-  type: ClusterIP
-  port: 5000

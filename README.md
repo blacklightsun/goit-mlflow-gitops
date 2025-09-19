@@ -1,1 +1,1 @@
-# goit-mlflow-gitops
+# MLflow Helm Demo
