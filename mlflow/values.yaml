@@ -931,7 +931,7 @@ run:
     runAsGroup: 1001
     runAsNonRoot: true
     privileged: false
-    readOnlyRootFilesystem: true
+    readOnlyRootFilesystem: false # Note: set to false if you plan to use MLflow with plugins that require writing to the filesystem (e.g., certain storage backends)
     allowPrivilegeEscalation: false
     capabilities:
       drop: ["ALL"]
@@ -1305,7 +1305,7 @@ waitContainer:
     runAsGroup: 1001
     runAsNonRoot: true
     privileged: false
-    readOnlyRootFilesystem: true
+    readOnlyRootFilesystem: false # Note: set to false if you plan to use MLflow with plugins that require writing to the filesystem (e.g., certain storage backends)
     allowPrivilegeEscalation: false
     capabilities:
       drop: ["ALL"]
