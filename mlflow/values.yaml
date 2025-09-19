@@ -1494,7 +1494,7 @@ externalAzureBlob:
 persistence:
   enabled: true
   storageClass: "mlflow-storage "  # ваш StorageClass
-  size: 4Gi
+  size: 8Gi
   accessModes:
     - ReadWriteOnce
 
@@ -1508,7 +1508,7 @@ postgresql:
     persistence:
       enabled: true
       storageClass: "mlflow-storage "
-      size: 4Gi
+      size: 8Gi
 
 # Конфігурація MinIO для артефактів (опціонально)
 minio:
@@ -1519,4 +1519,4 @@ minio:
   persistence:
     enabled: true
     storageClass: "mlflow-storage " 
-    size: 4Gi
+    size: 8Gi
