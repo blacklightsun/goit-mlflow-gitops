@@ -1004,7 +1004,7 @@
                         "size": {
                             "type": "string",
                             "description": "Size of data volume",
-                            "default": "8Gi"
+                            "default": "2Gi"
                         },
                         "existingClaim": {
                             "type": "string",
@@ -1712,7 +1712,7 @@
                         "size": {
                             "type": "string",
                             "description": "Size of data volume",
-                            "default": "8Gi"
+                            "default": "2Gi"
                         },
                         "labels": {
                             "type": "object",
