@@ -314,10 +314,10 @@ spec:
             {{- if .Values.tls.enabled }}
             - name: tls-certs
               mountPath: /certs
-              readOnly: true
+              readOnly: false
             - name: minio-client-certs
               mountPath: /.mc/certs
-              readOnly: true
+              readOnly: false
             {{- end }}
             {{- range $idx, $_ := .Values.provisioning.usersExistingSecrets }}
             - name: {{ printf "users-secret-%d" $idx }}

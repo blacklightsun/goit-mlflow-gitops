@@ -339,7 +339,7 @@ spec:
             {{- if  .Values.tracking.tls.enabled }}
             - name: mlflow-certificates
               mountPath: /bitnami/mlflow/certs
-              readOnly: true
+              readOnly: false
             {{- end }}
             {{- if .Values.tracking.auth.enabled }}
             - name: rendered-basic-auth

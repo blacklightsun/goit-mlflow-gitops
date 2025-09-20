@@ -251,9 +251,9 @@ tracking:
     seLinuxOptions: {}
     runAsUser: 1001
     runAsGroup: 1001
-    runAsNonRoot: false
-    privileged: true
-    readOnlyRootFilesystem: false # Note: set to false if you plan to use MLflow with plugins that require writing to the filesystem (e.g., certain storage backends)
+    runAsNonRoot: true
+    privileged: false
+    readOnlyRootFilesystem: false
     allowPrivilegeEscalation: false
     capabilities:
       drop: ["ALL"]
@@ -745,7 +745,7 @@ tracking:
       - ReadWriteOnce
     ## @param tracking.persistence.size Size of data volume
     ##
-    size: 2Gi # qwerty
+    size: 2Gi
     ## @param tracking.persistence.existingClaim The name of an existing PVC to use for persistence
     ##
     existingClaim: ""
@@ -929,9 +929,9 @@ run:
     seLinuxOptions: {}
     runAsUser: 1001
     runAsGroup: 1001
-    runAsNonRoot: false # Note: set to false if you plan to use MLflow with plugins that require root access (e.g., certain storage backends)
-    privileged: true
-    readOnlyRootFilesystem: false # Note: set to false if you plan to use MLflow with plugins that require writing to the filesystem (e.g., certain storage backends)
+    runAsNonRoot: true
+    privileged: false
+    readOnlyRootFilesystem: false
     allowPrivilegeEscalation: false
     capabilities:
       drop: ["ALL"]
@@ -1193,7 +1193,7 @@ run:
     selector: {}
     ## @param run.persistence.size Size of data volume
     ##
-    size: 2Gi # qwerty
+    size: 2Gi
     ## @param run.persistence.labels Persistent Volume labels
     ##
     labels: {}
@@ -1303,9 +1303,9 @@ waitContainer:
     seLinuxOptions: {}
     runAsUser: 1001
     runAsGroup: 1001
-    runAsNonRoot: false # Note: set to false if you plan to use MLflow with plugins that require root access (e.g., certain storage backends)
-    privileged: true
-    readOnlyRootFilesystem: false # Note: set to false if you plan to use MLflow with plugins that require writing to the filesystem (e.g., certain storage backends)
+    runAsNonRoot: true
+    privileged: false
+    readOnlyRootFilesystem: false
     allowPrivilegeEscalation: false
     capabilities:
       drop: ["ALL"]

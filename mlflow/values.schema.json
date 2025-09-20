@@ -377,7 +377,7 @@
                         "runAsNonRoot": {
                             "type": "boolean",
                             "description": "Set containers' Security Context runAsNonRoot",
-                            "default": false
+                            "default": true
                         },
                         "readOnlyRootFilesystem": {
                             "type": "boolean",
@@ -1371,7 +1371,7 @@
                         "runAsNonRoot": {
                             "type": "boolean",
                             "description": "Set Run containers' Security Context runAsNonRoot",
-                            "default": false
+                            "default": true
                         },
                         "privileged": {
                             "type": "boolean",
@@ -1846,7 +1846,7 @@
                         "runAsNonRoot": {
                             "type": "boolean",
                             "description": "Set containers' Security Context runAsNonRoot",
-                            "default": false
+                            "default": true
                         },
                         "privileged": {
                             "type": "boolean",
